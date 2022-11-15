@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Check the status of a file school
 t="./school"
 if [ -e "$t" ]
     then
