@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Print Hi when loop reaches the 9th iteration else Bestschool
 i=1 
 while (("$i" <= 10))
 do

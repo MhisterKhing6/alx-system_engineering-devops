@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#Replace numbers using fizz, fizzbuzz and Buzz
 i=1 
 while (("$i" <= 20))
 do
