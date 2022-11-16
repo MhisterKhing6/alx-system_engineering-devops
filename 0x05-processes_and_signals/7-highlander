@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #exit 7-higlander
-trap 'echo "I am invincible!!!" ; exit' 15 1
+trap 'echo "I am invincible!!!"' SIGTERM
 while ((1))
 do
     echo "To infinity and beyond"
