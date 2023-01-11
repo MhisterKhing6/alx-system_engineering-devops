@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
-# Creates a connection
-ssh ubuntu@54.236.46.141 -i ~/.ssh/school
-
+#!/usr/bin/env bash
+# Bash script tat uses ssh to connect to your server using the private key
+ssh -i ~/.ssh/school ubuntu@52.72.27.194
