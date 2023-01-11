@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#!/usr/bin/env bash
+# Bash script tat uses ssh to connect to your server using the private key
+ssh-keygen -f school -N betty
