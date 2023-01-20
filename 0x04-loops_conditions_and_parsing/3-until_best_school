@@ -1,8 +1,3 @@
 #!/usr/bin/env bash
-# Print Best school times using
-i=10
-until (("$i" == 0))
-do
-    echo "Best School"
-    ((i--))
-done
+# Script that displays Best School 10 times using the until loop
+i=1; until [ $i -ge 11 ]; do echo "Best School"; ((i++)); done

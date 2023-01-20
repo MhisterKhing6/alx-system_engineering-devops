@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-#Fix an apache server
+# Debugging
+
 sudo service apache2 start

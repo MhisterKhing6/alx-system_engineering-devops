@@ -1,3 +1,5 @@
-# Kill a process named killshadow
-exec { '/usr/bin/pkill killmenow':
+# Execute a command
+exec { 'kill':
+  command => 'pkill -f killmenow',
+  path    => ['/usr/bin', '/usr/sbin']
 }

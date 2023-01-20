@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# groups visitors by IP and HTTP status code, and displays this data.
+# Sort the data from parsing apache IP by Ocurrence,
+# Ordered from the greatest to the lowest number of occurrences
 
-awk '{print $1 " " $9}' < apache-access.log | sort | uniq -c | sort -gr
+awk '{ print $1 " " $9 }' apache-access.log | sort | uniq -c | sort -rn
