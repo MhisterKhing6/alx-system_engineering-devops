@@ -1,1 +1,1 @@
-Introductin to HTPS ans SSL certificate
+Introduction to ssl and tls
