@@ -1,0 +1,10 @@
+#!/bin/bash
+# Create an sql backup using sql dump
+if (($# < 1))
+then
+    echo "im here"
+else
+    name=$(date +%d-%m-%y)
+    mysqldump --user="root" --password="$1" --result-file="backup.sql" --all-database
+    tar -czf "$name.tar.gz" backup.sql
+fi
