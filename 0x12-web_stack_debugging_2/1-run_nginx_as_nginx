@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Checking the user
+service nginx stop
+sed -i '/s/80/8080' /etc/nginx/sites-available/default
+sudo -u nginx service nginx start
