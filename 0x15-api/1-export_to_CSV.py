@@ -19,10 +19,9 @@ if __name__ == '__main__':
         with open("{}.csv".format(sys.argv[1]), "w", encoding="utf-8") as file:
             writer = csv.writer(file, quotechar="'")
             for todo in todos_list:
-
                 writer.writerow([
                     "\"{}\"".format(employee_data.get("id")),
-                    "\"{}\"".format(employee_data.get("name")),
+                    "\"{}\"".format(employee_data.get("username")),
                     "\"{}\"".format(todo.get("completed")),
                     "\"{}\"".format(todo.get("title")),
                 ]
