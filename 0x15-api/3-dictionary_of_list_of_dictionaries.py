@@ -17,7 +17,7 @@ if __name__ == '__main__':
             for employee in employee_data:
                 list_format = []
                 todo = get(
-                    "https://jsonplaceholder.typicode.com/users/{}/posts".
+                    "https://jsonplaceholder.typicode.com/users/{}/todos".
                     format(employee.get('id')))
                 if todo.ok:
                     for task in todo.json():
