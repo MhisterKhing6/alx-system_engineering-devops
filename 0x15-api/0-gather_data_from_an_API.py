@@ -2,8 +2,8 @@
 """
 Fetch Data from a site using api
 """
+from requests import get
 import sys
-from requests import *
 
 
 if __name__ == '__main__':
@@ -20,7 +20,7 @@ if __name__ == '__main__':
                      complete.get('completed')
                      ]
         # Design the output
-        print("Employee {} is done with tasks ({}/{}):".
+        print("Employee {} is done with tasks({}/{}):".
               format(employee_data.get("name"),
                      len(completed),
                      len(todos_list)
